@@ -19,3 +19,16 @@ IDE	                   Microsoft Web         Development Environment
                        Developer 2010 Express	
 Database	             MySQL	               Standard
 Connector	             MySQL Connector/Net	 Data Connectivity
+
+⚙️ Installation and Setup
+Environment: Requires Microsoft Web Developer 2010 Express and MySQL Server installed.
+
+Connector: Ensure the MySQL Connector/Net driver is installed on your machine.
+
+Database: Create the required database in MySQL and import the schema, including the c_vehicles and c_driver_mst tables.
+
+Project Load: Open the .sln file in Visual Web Developer 2010 Express.
+
+Configuration: Verify the connection string in web.config to ensure it correctly points to your local MySQL instance.
+
+Run: Run the project directly from the IDE for local testing using IIS Express.
