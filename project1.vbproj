@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{C32E6B0A-1F24-445A-85D0-01CEA1EBC47F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>project1</RootNamespace>
+    <AssemblyName>project1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>project1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>project1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="abt.jpg" />
+    <Content Include="admin.aspx" />
+    <Content Include="Admin\ManageCars.aspx" />
+    <Content Include="Admin\Default.aspx" />
+    <Content Include="Admin\Employee.aspx" />
+    <Content Include="Admin\Available_Cars.aspx" />
+    <Content Include="Admin\Reservation.aspx" />
+    <Content Include="App_Data\car.mdf" />
+    <Content Include="App_Data\car_log.ldf">
+      <DependentUpon>car.mdf</DependentUpon>
+    </Content>
+    <Content Include="background2jpg.jpg" />
+    <Content Include="bg%28s%29.jpg" />
+    <Content Include="c_admin_add_cars.aspx" />
+    <Content Include="c_admin_login.aspx" />
+    <Content Include="c_bookings.aspx" />
+    <Content Include="c_book_cars.aspx" />
+    <Content Include="c_cars.aspx" />
+    <Content Include="c_driver_mgt.aspx" />
+    <Content Include="c_feedback.aspx" />
+    <Content Include="c_home.aspx" />
+    <Content Include="c_home_book.aspx" />
+    <Content Include="c_my_profile.aspx" />
+    <Content Include="c_registration.aspx" />
+    <Content Include="c_vehicle.txt" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="c_login.aspx" />
+    <Content Include="c_bill.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin.aspx.designer.vb">
+      <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.aspx.vb">
+      <DependentUpon>admin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminDashboard.Master.designer.vb">
+      <DependentUpon>AdminDashboard.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminDashboard.Master.vb">
+      <DependentUpon>AdminDashboard.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageCars.aspx.designer.vb">
+      <DependentUpon>ManageCars.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageCars.aspx.vb">
+      <DependentUpon>ManageCars.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Employee.aspx.designer.vb">
+      <DependentUpon>Employee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Employee.aspx.vb">
+      <DependentUpon>Employee.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Available_Cars.aspx.designer.vb">
+      <DependentUpon>Available_Cars.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Available_Cars.aspx.vb">
+      <DependentUpon>Available_Cars.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Reservation.aspx.designer.vb">
+      <DependentUpon>Reservation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Reservation.aspx.vb">
+      <DependentUpon>Reservation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="c_admin_add_cars.aspx.designer.vb">
+      <DependentUpon>c_admin_add_cars.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="c_admin_add_cars.aspx.vb">
+      <DependentUpon>c_admin_add_cars.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="c_admin_login.aspx.designer.vb">
+      <DependentUpon>c_admin_login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="c_admin_login.aspx.vb">
+      <DependentUpon>c_admin_login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="c_bookings.aspx.designer.vb">
+      <DependentUpon>c_bookings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="c_bookings.aspx.vb">
+      <DependentUpon>c_bookings.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="c_book_cars.aspx.designer.vb">
+      <DependentUpon>c_book_cars.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="c_book_cars.aspx.vb">
+      <DependentUpon>c_book_cars.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="c_cars.aspx.designer.vb">
+      <DependentUpon>c_cars.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="c_cars.aspx.vb">
+      <DependentUpon>c_cars.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="c_driver_mgt.aspx.designer.vb">
+      <DependentUpon>c_driver_mgt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="c_driver_mgt.aspx.vb">
+      <DependentUpon>c_driver_mgt.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="c_feedback.aspx.designer.vb">
+      <DependentUpon>c_feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="c_feedback.aspx.vb">
+      <DependentUpon>c_feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="c_home.aspx.designer.vb">
+      <DependentUpon>c_home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="c_home.aspx.vb">
+      <DependentUpon>c_home.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="c_home_book.aspx.designer.vb">
+      <DependentUpon>c_home_book.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="c_home_book.aspx.vb">
+      <DependentUpon>c_home_book.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="c_my_profile.aspx.designer.vb">
+      <DependentUpon>c_my_profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="c_my_profile.aspx.vb">
+      <DependentUpon>c_my_profile.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="c_registration.aspx.designer.vb">
+      <DependentUpon>c_registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="c_registration.aspx.vb">
+      <DependentUpon>c_registration.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="c_login.aspx.designer.vb">
+      <DependentUpon>c_login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="c_login.aspx.vb">
+      <DependentUpon>c_login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="c_bill.aspx.designer.vb">
+      <DependentUpon>c_bill.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="c_bill.aspx.vb">
+      <DependentUpon>c_bill.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\AdminDashboard.Master" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="c_driver_images\" />
+    <Folder Include="c_upload_images\" />
+    <Folder Include="imgcar\" />
+    <Folder Include="NewFolder1\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55914</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
